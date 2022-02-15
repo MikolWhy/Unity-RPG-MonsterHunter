@@ -41,12 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BottomWalls
-    uniqueID: 2819652025
+  - name: Walls
+    uniqueID: 206377153
     locked: 0
   - name: Actors
     uniqueID: 3063967813
     locked: 0
-  - name: Walls
-    uniqueID: 206377153
+  - name: BottomWalls
+    uniqueID: 2819652025
     locked: 0
