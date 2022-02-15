@@ -32,8 +32,8 @@ public class Player_Knight : MonoBehaviour
 
         //looks for the inputs on the keyboard and loads them into the x and y vectors - can check values for each key press in (edit > project settings > input manager)
         // x and y variables are declared
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        float x = Input.GetAxisRaw("Horizontal")/2;
+        float y = Input.GetAxisRaw("Vertical")/2;
 
         //reset MoveDelta at the begining
         //moveDelta = Vector3.zero; (old)
