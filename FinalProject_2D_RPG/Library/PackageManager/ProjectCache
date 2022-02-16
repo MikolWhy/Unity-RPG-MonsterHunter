@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637804576902447455
+      ticks: 637806414074357377
     m_Hash: 1963389025
   m_LockFileStatus:
     m_FilePath: C:/Users/Jack_/Documents/GitHub/Dungeon-Traveler-/FinalProject_2D_RPG/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637804577117478212
+      ticks: 637806414074617232
     m_Hash: 3265909920
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
