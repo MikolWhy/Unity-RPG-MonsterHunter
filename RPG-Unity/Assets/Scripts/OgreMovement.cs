@@ -63,6 +63,7 @@ public class OgreMovement : MonoBehaviour
         if (direction == 1)
         {
             pos.x += speed * Time.deltaTime;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (direction == 2)
         {
@@ -71,6 +72,7 @@ public class OgreMovement : MonoBehaviour
         if (direction == 3)
         {
             pos.x -= speed * Time.deltaTime;
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         if (direction == 4)
         {

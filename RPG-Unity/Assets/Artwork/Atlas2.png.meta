@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 3124417569305801657
     second: Ogre
+  - first:
+      213: -5950868152897857835
+    second: Heart
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -278,6 +281,27 @@ TextureImporter:
       bones: []
       spriteID: 9b33674b9392c5b20800000000000000
       internalID: 3124417569305801657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 242
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d69659a1f44a6da0800000000000000
+      internalID: -5950868152897857835
       vertices: []
       indices: 
       edges: []
