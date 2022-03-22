@@ -6858,7 +6858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &519420029
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17656,8 +17656,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1398192725}
-  - component: {fileID: 1398192724}
   - component: {fileID: 1398192723}
+  - component: {fileID: 1398192726}
+  - component: {fileID: 1398192724}
   m_Layer: 0
   m_Name: Center Chamber
   m_TagString: Untagged
@@ -17705,10 +17706,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.38764837, y: 0.08883619}
-  - {x: -0.38656145, y: 0.39591426}
-  - {x: 0.39841244, y: 0.39715004}
-  - {x: 0.40071246, y: 0.080997705}
+  - {x: 0.20449936, y: 0.40383434}
+  - {x: 0.40709567, y: 0.40279412}
+  - {x: 0.40272605, y: 0.08548318}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -17729,6 +17729,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1398192726
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398192722}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.39977834, y: 0.09137858}
+  - {x: -0.39923334, y: 0.40412152}
+  - {x: -0.20449936, y: 0.40383437}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1410816413
 GameObject:
   m_ObjectHideFlags: 0
