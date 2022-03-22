@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -4911933114060963458
     second: Wall_Clear_1
+  - first:
+      213: 3124417569305801657
+    second: Ogre
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -246,7 +249,7 @@ TextureImporter:
         width: 5
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,6 +257,27 @@ TextureImporter:
       bones: []
       spriteID: f81e6b9d26d4592d0800000000000000
       internalID: -3272624467260022385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 160
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b33674b9392c5b20800000000000000
+      internalID: 3124417569305801657
       vertices: []
       indices: 
       edges: []
