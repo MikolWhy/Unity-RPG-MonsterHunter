@@ -114,7 +114,7 @@ public class Player_Knight : MonoBehaviour
         rb.velocity = moveDir * MOVE_SPEED;
 
         if (isDashButtonDown) {
-            float dashAmount = 0.5f;
+            float dashAmount = 0.2f;
             Vector3 dashPosition = transform.position + moveDir * dashAmount;
 
             RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, moveDir, dashAmount, dashLayerMask);
