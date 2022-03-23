@@ -44,6 +44,9 @@ TextureImporter:
   - first:
       213: -6777542173974867263
     second: Columb
+  - first:
+      213: -2168910207342706043
+    second: flag
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -414,7 +417,7 @@ TextureImporter:
         width: 14
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,6 +425,27 @@ TextureImporter:
       bones: []
       spriteID: 1c2dffd3d4551f1a0800000000000000
       internalID: -6777542173974867263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 465
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5828e9568ab76e1e0800000000000000
+      internalID: -2168910207342706043
       vertices: []
       indices: 
       edges: []

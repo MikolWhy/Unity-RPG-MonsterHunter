@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteSwitch : MonoBehaviour
-{
+{   
+    public int sprite = 0;
     public GameObject player;
 
     private SpriteRenderer spriteRenderer;
@@ -16,17 +17,23 @@ public class SpriteSwitch : MonoBehaviour
 
     void Update(){
         if (Input.GetKeyDown("f")){
-            if (Input.GetKeyDown("1")){
-                ChangeSprite(0);
-            }
-            else if (Input.GetKeyDown("2")){
+            
+            if (sprite == 0){
                 ChangeSprite(1);
+            }
+            else if (sprite == 1){
+                ChangeSprite(2);
+            }
+            else if (sprite == 2){
+                ChangeSprite(0);
             }
         }
     }
 
     // Start is called before the first frame update
     void ChangeSprite(int type){
+        print(type);
         spriteRenderer.sprite = newPlayerSprite[type];
+        sprite = type;
     }
 }

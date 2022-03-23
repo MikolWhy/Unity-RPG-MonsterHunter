@@ -113,5 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4295311510472531324, guid: 01ac8f5c110416f449ba7a1179a1c334, type: 3}
-  spriteRenderer: {fileID: 0}
-  newPlayerSprite: {fileID: -432251291309978922, guid: e066694bec9ddd04c9eb77c8ba7e4ad8, type: 3}
+  newPlayerSprite:
+  - {fileID: -259679821165948209, guid: e066694bec9ddd04c9eb77c8ba7e4ad8, type: 3}
+  - {fileID: -259679821165948209, guid: e066694bec9ddd04c9eb77c8ba7e4ad8, type: 3}
+  - {fileID: -3919981076082286801, guid: e066694bec9ddd04c9eb77c8ba7e4ad8, type: 3}
