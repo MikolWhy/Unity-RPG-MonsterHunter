@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Actor
   - 
   - 
   - 
@@ -48,6 +49,6 @@ TagManager:
   - name: Actors
     uniqueID: 3063967813
     locked: 0
-  - name: BottomWalls
+  - name: Upright Walls
     uniqueID: 2819652025
     locked: 0
