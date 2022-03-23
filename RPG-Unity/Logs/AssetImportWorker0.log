@@ -1076,3 +1076,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2226.513471 seconds.
+  path: Assets/Prefabs/Slime.prefab
+  artifactKey: Guid(47fbb54dfd6b47b47b705f2178ee77ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Slime.prefab using Guid(47fbb54dfd6b47b47b705f2178ee77ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201687c9324a66cfa8af1d90cf94a393') in 1.739489 seconds 
+  Import took 2.914864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.100396 seconds.
+  path: Assets/Prefabs/Ogre.prefab
+  artifactKey: Guid(ba12c771b4379744eb281d2e1af5fff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ogre.prefab using Guid(ba12c771b4379744eb281d2e1af5fff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57e8525173b994f584e2a445b82b972') in 0.049637 seconds 
+  Import took 0.060675 seconds .
+
