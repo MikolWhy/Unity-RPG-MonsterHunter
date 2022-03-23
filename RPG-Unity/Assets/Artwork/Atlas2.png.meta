@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 1031563716797472259
     second: Sword
+  - first:
+      213: -432251291309978922
+    second: purple_knight
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -318,7 +321,7 @@ TextureImporter:
         width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,6 +329,27 @@ TextureImporter:
       bones: []
       spriteID: 30e15e62cb9d05e00800000000000000
       internalID: 1031563716797472259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_knight
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 90
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dac3cf9db5500af0800000000000000
+      internalID: -432251291309978922
       vertices: []
       indices: 
       edges: []
