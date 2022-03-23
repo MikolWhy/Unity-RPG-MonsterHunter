@@ -9,14 +9,14 @@ public class Player_Knight : MonoBehaviour
     //creating the dashLayerMask
     [SerializeField] private LayerMask dashLayerMask;
     //dash variables (new)
-     private const float MOVE_SPEED = 1f;
+    private const float MOVE_SPEED = 1f;
 
 
 
     //declaring a field for casting player collider box for on-hit collisions (was movedir)
     private Vector3 moveDelta;
     private Vector3 moveDir;
-    
+
     //indication variable keeping track of key input
     private bool isDashButtonDown;
 
@@ -37,7 +37,7 @@ public class Player_Knight : MonoBehaviour
     private float dashCounter;
     public float dashSpeed;
 
-   public float moveSpeed;
+    public float moveSpeed;
 
     private float dashCoolCounter;
 
@@ -52,9 +52,10 @@ public class Player_Knight : MonoBehaviour
     }
 
     //after the first frame update (every frame)
-    private void Update(){
+    private void Update()
+    {
         //keep rotation at 0 (fixes player eratic error)
-         rb.SetRotation(0);
+        rb.SetRotation(0);
         //vector that keeps track of the delta movement
 
 
@@ -63,34 +64,35 @@ public class Player_Knight : MonoBehaviour
         // x and y variables are declared
         //float moveX = 0f;
         //float moveY = 0f;
-        float x = Input.GetAxisRaw("Horizontal")/2;
-        float y = Input.GetAxisRaw("Vertical")/2;
+        float x = Input.GetAxisRaw("Horizontal") / 2;
+        float y = Input.GetAxisRaw("Vertical") / 2;
 
-         //reset MoveDelta at the begining
+        //reset MoveDelta at the begining
         //moveDelta = Vector3.zero; (old)
         //now when creating a vector, it will be reset
         moveDelta = new Vector3(x, y, 0);
         moveDir = new Vector3(x, y).normalized;
 
-/**
-        if (Input.GetKey(KeyCode.W)) {
-            moveDelta.y = +1f;
-        }
-        if (Input.GetKey(KeyCode.S)) {
-            moveDelta.y = -1f;
-        }
-        if (Input.GetKey(KeyCode.A)) {
-            moveDelta.x = -1f;
-        }
-        if (Input.GetKey(KeyCode.D)) {
-            moveDelta.x = +1f;
-        }
-**/
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        /**
+                if (Input.GetKey(KeyCode.W)) {
+                    moveDelta.y = +1f;
+                }
+                if (Input.GetKey(KeyCode.S)) {
+                    moveDelta.y = -1f;
+                }
+                if (Input.GetKey(KeyCode.A)) {
+                    moveDelta.x = -1f;
+                }
+                if (Input.GetKey(KeyCode.D)) {
+                    moveDelta.x = +1f;
+                }
+        **/
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             isDashButtonDown = true;
         }
     }
-     
+
 
     //fixed update for manual collision + etc (if looking for inputs, fixed update may skip some in rare cases, check back to this function in case of error) (took out private async void)
     private void FixedUpdate()
@@ -100,7 +102,7 @@ public class Player_Knight : MonoBehaviour
         //Debug.Log(x);
         //Debug.Log(y);
 
-         //rb.velocity = moveDelta * moveSpeed;
+        //rb.velocity = moveDelta * moveSpeed;
 
         //swap sprite direction based on right or left movement
         if (moveDelta.x > 0)
@@ -113,12 +115,14 @@ public class Player_Knight : MonoBehaviour
 
         rb.velocity = moveDir * MOVE_SPEED;
 
-        if (isDashButtonDown) {
+        if (isDashButtonDown)
+        {
             float dashAmount = 0.2f;
             Vector3 dashPosition = transform.position + moveDir * dashAmount;
 
             RaycastHit2D raycastHit2d = Physics2D.Raycast(transform.position, moveDir, dashAmount, dashLayerMask);
-            if (raycastHit2d.collider != null) {
+            if (raycastHit2d.collider != null)
+            {
                 dashPosition = raycastHit2d.point;
             }
 
@@ -138,7 +142,6 @@ public class Player_Knight : MonoBehaviour
         //player movement - delta time for consistency of speed on varying devices (accounting for slower and faster devices)
         transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
         }
-
                 
         //BOX CAST (current transform position, boxCollider Size, Angle, y axis, distance in absolute value as you wouldn't want a negative value in terms with Time, usually result but will be using layer mask to test what layer its on ): 
         //make sure movement is possible in this direction (X AXIS0) by casting a box there first, if box returns null, movement is allowed
@@ -151,22 +154,20 @@ public class Player_Knight : MonoBehaviour
         }
         **/
 
-   /**if (Input.GetKeyDown(KeyCode.Space)) {
-            //isDashButtonDown = true;
-
-            isDashing = true;
-            currentDashTimer = startDashTimer;
-            rb.velocity = Vector2.zero;
-            dashDirection = (int)moveDelta.x;
-        }
-        if (isDashing){
-            rb.velocity = transform.right * dashDirection * dashForce;
-
-            currentDashTimer -= Time.deltaTime;
-            
-            if(currentDashTimer <= 0){
-                isDashing = false;
-            }
-            **/
-        }
+        /**if (Input.GetKeyDown(KeyCode.Space)) {
+                 //isDashButtonDown = true;
+                 isDashing = true;
+                 currentDashTimer = startDashTimer;
+                 rb.velocity = Vector2.zero;
+                 dashDirection = (int)moveDelta.x;
+             }
+             if (isDashing){
+                 rb.velocity = transform.right * dashDirection * dashForce;
+                 currentDashTimer -= Time.deltaTime;
+                 
+                 if(currentDashTimer <= 0){
+                     isDashing = false;
+                 }
+                 **/
     }
+}
