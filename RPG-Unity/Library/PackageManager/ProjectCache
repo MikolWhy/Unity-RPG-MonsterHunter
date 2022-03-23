@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637835911606738155
-    m_Hash: 1964067419
+      ticks: 637835930771004907
+    m_Hash: 3492893130
   m_LockFileStatus:
     m_FilePath: C:/Users/pikak/CS/SE2250Project_mtuenmuk_jlacy_myik2_kzhan353/RPG-Unity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637835911707607779
-    m_Hash: 2848750632
+      ticks: 637835930771014912
+    m_Hash: 17166110
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
